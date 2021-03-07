@@ -1,0 +1,8 @@
+-I/home/pei/Maps/src/map
+-I/home/pei/Maps/src/map/cmake-build-debug
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="map"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/pei/Maps/src/map/cmake-build-debug/include/moc_marker.cpp
+/home/pei/Maps/src/map/include/marker.h
