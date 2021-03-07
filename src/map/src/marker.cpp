@@ -3,7 +3,7 @@
 //
 
 #include "marker.h"
-
+#include <iostream>
 Marker::Marker(QObject *parent)
         : QAbstractListModel(parent),
           m_maxMarkers(0)
@@ -12,6 +12,7 @@ Marker::Marker(QObject *parent)
 
 void Marker::moveMarker(const QGeoCoordinate &coordinate)
 {
+    std::cout<<"duar"<<std::endl;
     QGeoCoordinate last = m_current;
     m_current = coordinate;
     Q_EMIT currentChanged();

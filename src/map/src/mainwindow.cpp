@@ -30,8 +30,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::onTimeout()
 {
-    double x = 15.4561 + 0.01*std::sin(i*pi/24);
-    double y = 73.8021 + 0.01*std::cos(i*pi/24);
+    double x = -7.286460463054833 + 0.01*std::sin(i*pi/24);
+    double y = 112.79596433586721 + 0.01*std::cos(i*pi/24);
     QGeoCoordinate next(x, y);
     marker_model.moveMarker(next);
     i++;

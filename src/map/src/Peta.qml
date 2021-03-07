@@ -52,21 +52,17 @@ Rectangle {
                 property int jitterThreshold : 10
 
                     // ---------------------------------
+                Marker{
+                    coordinate: marker_model.current
+                }
 
                 MapItemView {
-                    model: searchModel
-                    delegate: MapQuickItem {
-                        coordinate: place.location.coordinate
+                    model: marker_model
+                    delegate: Marker {
+                        coordinate: model.position
+                    }
 
-                        anchorPoint.x: image.width * 0.5
-                        anchorPoint.y: image.height
-
-                        sourceItem: Column {
-                            Image { id: image; source: "../images/marker.png" }
-                            Text { text: "apa"; font.bold: true }
-                                            }
-                                            }
-                            }
+                    }
 
                         MouseArea {
                         id: mouseArea

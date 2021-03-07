@@ -3,7 +3,7 @@
         <file>Peta.qml</file>
         <file>Marker.qml</file>
     </qresource>
-    <qresource prefix="/">
-        <file>/images/marker.png</file>
+    <qresource prefix="/images">
+        <file>Tutut.png</file>
     </qresource>
 </RCC>
