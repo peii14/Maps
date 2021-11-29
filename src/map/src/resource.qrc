@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>Peta.qml</file>
-        <file>Marker.qml</file>
-    </qresource>
-    <qresource prefix="/">
-        <file>/images/marker.png</file>
-    </qresource>
-</RCC>
